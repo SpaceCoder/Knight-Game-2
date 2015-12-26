@@ -8,6 +8,8 @@
     <customFonts key="customFonts">
         <mutableArray key="BLKCHCRY.TTF">
             <string>BlackChancery</string>
+            <string>BlackChancery</string>
+            <string>BlackChancery</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -29,65 +31,95 @@
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NVQ-be-Nxc">
                                 <rect key="frame" x="0.0" y="297" width="600" height="318"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="Tbi-Ag-gcV">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="Tbi-Ag-gcV">
                                         <rect key="frame" x="24" y="0.0" width="552" height="255"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cEq-Es-VzN">
-                                                <rect key="frame" x="0.0" y="0.0" width="176" height="255"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="9Pq-uu-f20">
+                                                <rect key="frame" x="0.0" y="0.0" width="241" height="255"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWt-7c-CB1" userLabel="Player1Attack">
-                                                        <rect key="frame" x="20" y="0.0" width="136" height="50"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cEq-Es-VzN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="176" height="255"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWt-7c-CB1" userLabel="Player1Attack">
+                                                                <rect key="frame" x="20" y="0.0" width="136" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="136" id="Xl0-0R-ahy"/>
+                                                                    <constraint firstAttribute="height" constant="50" id="pne-ul-bsL"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                <state key="normal" title="ATTACK" backgroundImage="player1attackbtn">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                            </button>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oger" translatesAutoresizingMaskIntoConstraints="NO" id="U7g-Wq-Sjb" userLabel="player1">
+                                                                <rect key="frame" x="0.0" y="65" width="176" height="190"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="U7g-Wq-Sjb" secondAttribute="height" multiplier="88:95" id="fBv-vu-ec0"/>
+                                                                    <constraint firstAttribute="height" constant="190" id="gfp-iM-OEJ"/>
+                                                                    <constraint firstAttribute="width" constant="176" id="lAl-a0-OK6"/>
+                                                                </constraints>
+                                                                <variation key="default">
+                                                                    <mask key="constraints">
+                                                                        <exclude reference="lAl-a0-OK6"/>
+                                                                    </mask>
+                                                                </variation>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000 hp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PA3-Uk-cbw" userLabel="Player 1 HP">
+                                                        <rect key="frame" x="176" y="0.0" width="65" height="30"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="136" id="Xl0-0R-ahy"/>
-                                                            <constraint firstAttribute="height" constant="50" id="pne-ul-bsL"/>
+                                                            <constraint firstAttribute="height" constant="30" id="6ab-Um-67x"/>
+                                                            <constraint firstAttribute="width" constant="65" id="AIE-10-TlJ"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                        <state key="normal" title="ATTACK" backgroundImage="player1attackbtn">
-                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </state>
-                                                    </button>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oger" translatesAutoresizingMaskIntoConstraints="NO" id="U7g-Wq-Sjb" userLabel="player1">
-                                                        <rect key="frame" x="0.0" y="65" width="176" height="190"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="U7g-Wq-Sjb" secondAttribute="height" multiplier="88:95" id="fBv-vu-ec0"/>
-                                                            <constraint firstAttribute="height" constant="190" id="gfp-iM-OEJ"/>
-                                                            <constraint firstAttribute="width" constant="176" id="lAl-a0-OK6"/>
-                                                        </constraints>
-                                                        <variation key="default">
-                                                            <mask key="constraints">
-                                                                <exclude reference="lAl-a0-OK6"/>
-                                                            </mask>
-                                                        </variation>
-                                                    </imageView>
+                                                        <fontDescription key="fontDescription" name="BlackChancery" family="BlackChancery" pointSize="20"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="frL-ET-2kg">
-                                                <rect key="frame" x="376" y="0.0" width="176" height="255"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="cPB-E0-Tnp">
+                                                <rect key="frame" x="311" y="0.0" width="241" height="255"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPm-E8-3Rg" userLabel="Player2Attack">
-                                                        <rect key="frame" x="20" y="0.0" width="136" height="50"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000 hp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jID-XH-kLS" userLabel="Player 2 HP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="65" height="30"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="136" id="QmH-ov-CUq"/>
-                                                            <constraint firstAttribute="height" constant="50" id="lyl-to-ZRV"/>
+                                                            <constraint firstAttribute="width" constant="65" id="Z5y-tM-GTD"/>
+                                                            <constraint firstAttribute="height" constant="30" id="r47-9s-0bE"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                        <state key="normal" title="ATTACK" backgroundImage="player1attackbtn">
-                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </state>
-                                                    </button>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player" translatesAutoresizingMaskIntoConstraints="NO" id="xBE-rT-R7i" userLabel="player2">
-                                                        <rect key="frame" x="0.0" y="65" width="176" height="190"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="xBE-rT-R7i" secondAttribute="height" multiplier="88:95" id="51e-6M-tpM"/>
-                                                            <constraint firstAttribute="height" constant="190" id="GXY-QK-F0N"/>
-                                                            <constraint firstAttribute="width" constant="176" id="S2C-uD-3o9"/>
-                                                        </constraints>
-                                                        <variation key="default">
-                                                            <mask key="constraints">
-                                                                <exclude reference="S2C-uD-3o9"/>
-                                                            </mask>
-                                                        </variation>
-                                                    </imageView>
+                                                        <fontDescription key="fontDescription" name="BlackChancery" family="BlackChancery" pointSize="20"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="frL-ET-2kg">
+                                                        <rect key="frame" x="65" y="0.0" width="176" height="255"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPm-E8-3Rg" userLabel="Player2Attack">
+                                                                <rect key="frame" x="20" y="0.0" width="136" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="136" id="QmH-ov-CUq"/>
+                                                                    <constraint firstAttribute="height" constant="50" id="lyl-to-ZRV"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                <state key="normal" title="ATTACK" backgroundImage="player1attackbtn">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                            </button>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player" translatesAutoresizingMaskIntoConstraints="NO" id="xBE-rT-R7i" userLabel="player2">
+                                                                <rect key="frame" x="0.0" y="65" width="176" height="190"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="xBE-rT-R7i" secondAttribute="height" multiplier="88:95" id="51e-6M-tpM"/>
+                                                                    <constraint firstAttribute="height" constant="190" id="GXY-QK-F0N"/>
+                                                                    <constraint firstAttribute="width" constant="176" id="S2C-uD-3o9"/>
+                                                                </constraints>
+                                                                <variation key="default">
+                                                                    <mask key="constraints">
+                                                                        <exclude reference="S2C-uD-3o9"/>
+                                                                    </mask>
+                                                                </variation>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
