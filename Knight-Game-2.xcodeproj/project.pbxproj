@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		457435471C2E98CD00AD9085 /* BLKCHCRY.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 457435461C2E98CD00AD9085 /* BLKCHCRY.TTF */; };
 		4595F7861C2E354C008BFCDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4595F7851C2E354C008BFCDD /* AppDelegate.swift */; };
 		4595F7881C2E354C008BFCDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4595F7871C2E354C008BFCDD /* ViewController.swift */; };
 		4595F78B1C2E354C008BFCDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4595F7891C2E354C008BFCDD /* Main.storyboard */; };
 		4595F78D1C2E354C008BFCDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4595F78C1C2E354C008BFCDD /* Assets.xcassets */; };
 		4595F7901C2E354C008BFCDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4595F78E1C2E354C008BFCDD /* LaunchScreen.storyboard */; };
+		4595F7981C2E35BB008BFCDD /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4595F7971C2E35BB008BFCDD /* Character.swift */; };
+		4595F79A1C2E53CA008BFCDD /* Knight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4595F7991C2E53CA008BFCDD /* Knight.swift */; };
+		4595F79C1C2E56C3008BFCDD /* Oger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4595F79B1C2E56C3008BFCDD /* Oger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		457435461C2E98CD00AD9085 /* BLKCHCRY.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = BLKCHCRY.TTF; sourceTree = "<group>"; };
 		4595F7821C2E354B008BFCDD /* Knight-Game-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Knight-Game-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4595F7851C2E354C008BFCDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4595F7871C2E354C008BFCDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		4595F78C1C2E354C008BFCDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4595F78F1C2E354C008BFCDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4595F7911C2E354C008BFCDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4595F7971C2E35BB008BFCDD /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		4595F7991C2E53CA008BFCDD /* Knight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Knight.swift; sourceTree = "<group>"; };
+		4595F79B1C2E56C3008BFCDD /* Oger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Oger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				4595F78C1C2E354C008BFCDD /* Assets.xcassets */,
 				4595F78E1C2E354C008BFCDD /* LaunchScreen.storyboard */,
 				4595F7911C2E354C008BFCDD /* Info.plist */,
+				4595F7971C2E35BB008BFCDD /* Character.swift */,
+				4595F7991C2E53CA008BFCDD /* Knight.swift */,
+				4595F79B1C2E56C3008BFCDD /* Oger.swift */,
+				457435461C2E98CD00AD9085 /* BLKCHCRY.TTF */,
 			);
 			path = "Knight-Game-2";
 			sourceTree = "<group>";
@@ -124,6 +136,7 @@
 			files = (
 				4595F7901C2E354C008BFCDD /* LaunchScreen.storyboard in Resources */,
 				4595F78D1C2E354C008BFCDD /* Assets.xcassets in Resources */,
+				457435471C2E98CD00AD9085 /* BLKCHCRY.TTF in Resources */,
 				4595F78B1C2E354C008BFCDD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4595F79A1C2E53CA008BFCDD /* Knight.swift in Sources */,
+				4595F79C1C2E56C3008BFCDD /* Oger.swift in Sources */,
+				4595F7981C2E35BB008BFCDD /* Character.swift in Sources */,
 				4595F7881C2E354C008BFCDD /* ViewController.swift in Sources */,
 				4595F7861C2E354C008BFCDD /* AppDelegate.swift in Sources */,
 			);
@@ -286,6 +302,7 @@
 				4595F7961C2E354C008BFCDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
