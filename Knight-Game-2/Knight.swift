@@ -12,4 +12,5 @@ class Knight: Character {
     override var type: String {
         return "Knight"
     }
+    
 }

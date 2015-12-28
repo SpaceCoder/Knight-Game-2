@@ -29,13 +29,23 @@ class Character {
         return _name
     }
     
+    var IsAlive: Bool {
+        if self._hp <= 0 {
+            return false
+        } else {
+            return true
+        }
+    }
+    
     init(name: String, hp: Int, AttackPwr: Int) {
         self._name = name
         self._hp = hp
         self._AttackPwr = AttackPwr
     }
     
-    func RecievingAttack(AttackPwr: Int) {
-        self._hp! -= AttackPwr
+    func RecievingAttack(Attack: Int) {
+        if IsAlive {
+            self._hp! -= Attack
+        }
     }
 }
